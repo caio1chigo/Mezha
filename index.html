@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+
+    <meta name="theme-color" content="#253A6F">
+
+    <title>Mezha | Cozinha &amp; Bar</title>
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+  rel="stylesheet"
+>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    >
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mezha-layout-refinement.css">
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+      <img src="src/mezha-logo.png" alt="logo do Mezha">
+
+      <span>MEZHA · COZINHA &amp; BAR</span>
+    </div>
+
+   <header class="header-premium">
+  <div class="header-details">
+    <span>Samambaia Sul · Brasília</span>
+    <span class="header-hours">Ter — Dom · 11h às 23h</span>
+    <a href="tel:+5561992590904">(61) 99259-0904</a>
+  </div>
+
+  <a class="logo-premium" href="#inicio">
+    <img src="src/mezha-logo.png" alt="Mezha Cozinha e Bar">
+  </a>
+
+  <span class="mobile-hours">
+    Ter — Dom<br>
+    11h às 23h
+  </span>
+
+  <nav class="header-nav" id="nav">
+    <a href="#casa">A casa</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#reserva">Reservas</a>
+    <a class="gold header-cardapio" href="cardapio.html">
+      Ver cardápio
+    </a>
+  </nav>
+
+  <button
+    id="menu-btn"
+    type="button"
+    aria-label="Abrir menu"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+    <main id="inicio">
+      <!-- Hero / Capa -->
+      <section class="hero">
+        <img
+          src="src/ambiente-2.webp"
+          alt="Fachada do Mezha"
+        >
+
+        <div class="hero-content">
+          <p>Samambaia Sul · Brasília</p>
+
+          <h1>
+            Sinfonia de sabores,<br>
+            <i>Servida com elegância.</i>
+          </h1>
+
+          <div>
+            <a class="gold" href="cardapio.html">
+              Explorar o cardápio
+            </a>
+
+            <a class="outline" href="reservas.html">
+              Reservar mesa
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- A casa / Essência -->
+      <section class="essence fade-in" id="casa">
+        <p class="kicker">01 · Nossa essência</p>
+
+        <div class="essence-copy">
+          <h2>
+            Feito para quem<br>
+            gosta de <i>saborear.</i>
+          </h2>
+
+          <p>
+            No Mezha, a cozinha brasileira encontra novas ideias sem perder
+            o afeto. Ingredientes marcantes, pratos generosos e uma atmosfera
+            feita para encontros.
+            <br><br>
+            Do primeiro brinde à última garfada, tudo chega com presença.
+          </p>
+        </div>
+
+        <div class="essence-grid">
+  <article class="essence-card">
+    <img src="src/ambiente.webp" alt="Ambiente acolhedor do Mezha">
+    <p>Ambiente acolhedor</p>
+  </article>
+
+  <article class="essence-card">
+    <img src="src/entrada.webp" alt="Espaço perfeito para reuniões">
+    <p>Perfeito para reuniões</p>
+  </article>
+
+  <article class="essence-card">
+    <img src="src/ambiente-2.webp" alt="Comida inesquecível do Mezha">
+    <p>Comida inesquecível</p>
+  </article>
+</div>
+</section>
+
+      <!-- Cardápio -->
+     <section class="blue menu-section fade-in" id="cardapio">
+  <h2>Nosso cardápio</h2>
+
+  <p class="menu-intro">
+    Cozinha autoral, criada com paixão, drinks com identidade e cuidado a cada detalhe.
+    É para conhecer, brindar e ficar.
+  </p>
+
+  <div class="category-grid">
+    <article class="category-card">
+      <img src="src/entrada.webp" alt="Entradas do Mezha">
+      <span>Entradas</span>
+    </article>
+
+    <article class="category-card">
+      <img src="src/prato-carne.webp" alt="Pratos principais do Mezha">
+      <span>Pratos principais</span>
+    </article>
+
+    <article class="category-card">
+      <img src="src/sobremesa.webp" alt="Sobremesas e drinks do Mezha">
+      <span>Sobremesas e drinks</span>
+    </article>
+  </div>
+
+  <a class="gold" href="cardapio.html">Ver cardápio</a>
+
+  <div class="section-divider" aria-hidden="true">
+    <span></span>
+
+    <svg viewBox="0 0 80 24" role="presentation">
+      <path d="M4 12h25M51 12h25" />
+      <path d="M34 12c3-7 9-7 12 0-3 7-9 7-12 0Z" />
+      <circle cx="30" cy="12" r="1.7" />
+      <circle cx="50" cy="12" r="1.7" />
+    </svg>
+
+    <span></span>
+  </div>
+
+  <div class="gallery" id="galeria">
+    <h2 class="fade-in">Nossa galeria</h2>
+
+    <p class="gallery-intro">
+      Luz baixa, conversa boa e uma mesa cheia. Criamos um ambiente
+      contemporâneo e acolhedor para celebrar o cotidiano — e também as
+      grandes ocasiões.
+    </p>
+
+    <div class="gallery-track">
+      <img src="src/ambiente.webp" alt="Ambiente do Mezha">
+      <img src="src/ambiente-2.webp" alt="Salão do Mezha">
+      <img src="src/mezha-banner.webp" alt="Fachada do Mezha">
+    </div>
+
+    <div
+      class="dots"
+      aria-label="Indicadores da galeria"
+      aria-hidden="true"
+    >
+      •　•　•
+    </div>
+  </div>
+</section>
+      <!-- Explorar menu -->
+     <section class="explore fade-in" id="explore">
+  <p class="kicker">Explore o menu</p>
+  <h2>
+    Sabores para dividir,<br>
+    <i>brindar e voltar.</i>
+  </h2>
+  <p>
+    Uma seleção de pratos preparados para transformar cada encontro
+    em uma experiência especial.
+  </p>
+  <div class="dish-grid">
+    <img src="src/prato-mar.webp" alt="Prato de frutos do mar">
+    <img src="src/prato-carne.webp" alt="Prato de carne">
+    <img src="src/parmegiana.webp" alt="Parmegiana">
+    <img src="src/entrada.webp" alt="Entrada">
+    <img src="src/sobremesa.webp" alt="Sobremesa">
+    <img src="src/prato-carne.webp" alt="Prato principal">
+  </div>
+  <a class="blue-button" href="cardapio.html">
+    Ver cardápio
+  </a>
+</section>
+
+      <!-- Reservas -->
+      <section class="blue reserve fade-in" id="reserva">
+        <img
+          src="src/ambiente-2.webp"
+          alt="Ambiente do Mezha"
+        >
+
+        <div>
+          <p class="kicker">
+            Uma mesa espera por você
+          </p>
+
+          <h2>Reserve sua mesa</h2>
+
+          <p>
+            Uma boa noite começa com uma mesa preparada para você.
+          </p>
+
+          <a class="gold" href="reservas.html">
+            Reserve agora
+          </a>
+        </div>
+      </section>
+
+      <!-- Avaliações -->
+      <section class="reviews" id="avaliacoes">
+  <p class="kicker">O que nossos convidados dizem</p>
+  <h2>
+    O melhor elogio<br>
+    é ver você <i>voltar.</i>
+  </h2>
+  <div class="review-grid">
+    <article class="review-card">
+      <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+      <blockquote>
+        “Comida deliciosa, ambiente maravilhoso e atendimento impecável.”
+      </blockquote>
+      <small>— Avaliação no Google</small>
+    </article>
+    <article class="review-card">
+      <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+      <blockquote>
+        “Nossa primeira vez e certamente voltaremos.”
+      </blockquote>
+      <small>— Avaliação no Google</small>
+    </article>
+    <article class="review-card">
+      <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+      <blockquote>
+        “Sabores incríveis e uma noite muito especial.”
+      </blockquote>
+      <small>— Avaliação no Google</small>
+    </article>
+  </div>
+</section>
+    </main>
+
+    <!-- Rodapé -->
+   <footer class="site-footer fade-in">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a class="footer-logo" href="#inicio">
+        <img src="src/mezha-logo.png" alt="Mezha Cozinha e Bar">
+      </a>
+
+      <p>
+        Cozinha, encontros e sabores feitos para ficar na memória.
+      </p>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram do Mezha">Instagram</a>
+        <a href="#" aria-label="WhatsApp do Mezha">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <span>Menu</span>
+      <a href="#casa">A casa</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#reserva">Reservas</a>
+    </div>
+
+    <div class="footer-column">
+      <span>Contato</span>
+      <a href="tel:+5561992590904">(61) 99259-0904</a>
+      <a href="mailto:contato@mezha.com.br">contato@mezha.com.br</a>
+      <p>Samambaia Sul<br>Brasília — DF</p>
+    </div>
+
+    <div class="footer-form">
+      <span>Fale com o Mezha</span>
+      <p>Deixe seus dados e nossa equipe entra em contato.</p>
+
+      <form id="contact-form">
+        <input
+          type="text"
+          name="nome"
+          placeholder="Seu nome"
+          required
+        >
+
+        <input
+          type="tel"
+          name="whatsapp"
+          placeholder="Seu WhatsApp"
+          required
+        >
+
+        <button class="gold" type="submit">
+          Enviar mensagem
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Mezha Cozinha & Bar. Todos os direitos reservados.</span>
+
+    <div>
+      <a href="cardapio.html">Ver cardápio</a>
+    </div>
+  </div>
+</footer>
+<a
+  class="floating-button floating-whatsapp"
+  href="https://wa.me/5561999999999"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Conversar pelo WhatsApp"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L0 24l6.6-1.7a11.8 11.8 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.4Zm-8.4 18.2h-.1c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.7 9.7 0 0 1-1.5-5.1C1.9 6.2 6.5 1.7 12.1 1.7c2.7 0 5.2 1 7.1 2.9a10 10 0 0 1 2.9 7.1c0 5.6-4.5 10-10 10Zm5.5-7.5c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.7-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.1-.7-1.6-1-2.2-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 3s1.3 3.5 1.5 3.8c.2.2 2.5 3.9 6.1 5.4.9.4 1.6.6 2.1.8.9.3 1.7.2 2.3.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.2-.2-.5-.3Z" />
+  </svg>
+</a>
+<button
+  class="floating-button floating-top"
+  type="button"
+  aria-label="Voltar ao início"
+>
+
+  ↑
+</button>
+    <script src="script.js"></script>
+  </body>
+</html>

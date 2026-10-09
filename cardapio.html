@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17191B">
+  <title>Cardápio | Mezha Cozinha e Bar</title>
+  <link rel="shortcut icon" href="src/favicon.ico" type="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cardapio.css">
+</head>
+
+<body class="menu-page">
+     <div class="loader" id="loader">
+    <img src="src/mezha-logo.png" alt="Mezha Cozinha e Bar">
+    <span>MEZHA · COZINHA E BAR</span>
+  </div>
+  <header class="header-premium">
+    <div class="header-details">
+      <span>Samambaia Sul · Brasília</span>
+      <span>Ter — Dom · 11h às 23h</span>
+      <a href="tel:+5561992590904">(61) 99259-0904</a>
+    </div>
+
+    <a class="logo-premium" href="index.html" aria-label="Mezha Cozinha e Bar">
+      <img src="src/mezha-logo.png" alt="Mezha Cozinha e Bar">
+    </a>
+
+    <span class="mobile-hours">
+      Ter — Dom<br>
+      11h às 23h
+    </span>
+
+    <nav class="header-nav" id="nav">
+      <a href="index.html#casa">A casa</a>
+      <a href="index.html#galeria">Galeria</a>
+      <a href="reservas.html">Reservas</a>
+      <button
+  class="gold header-cardapio order-header-button"
+  id="order-header-button"
+  type="button"
+>
+  <span id="order-header-label">Fazer pedido</span>
+  <span class="header-order-count" id="header-order-count">0</span>
+</button>
+    </nav>
+
+    <button
+      id="menu-btn"
+      type="button"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="menu-hero">
+      <img src="src/entrada.webp" alt="Prato especial do Mezha">
+
+      <div class="menu-hero-overlay"></div>
+
+      <div class="menu-hero-content">
+        <p>Mezha Cozinha e Bar</p>
+        <h1>Entradas</h1>
+      </div>
+    </section>
+
+    <section class="menu-catalog">
+      <div class="catalog-title">
+        <p class="catalog-kicker">Sabores para começar</p>
+        <h2>Menu completo</h2>
+        <p>
+          Seleções preparadas para abrir o apetite, dividir histórias
+          e brindar bons momentos.
+        </p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-id="1" data-name="Tábua Mezha" data-price="59.90">
+          <div class="product-photo">
+            <img src="src/entrada.webp" alt="Tábua Mezha">
+            <button class="favorite-button" type="button" aria-label="Adicionar Tábua Mezha ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Tábua Mezha</h3>
+          <p>Frios, queijos, pães artesanais, tomates e azeitonas.</p>
+          <strong>R$ 59,90</strong>
+        </article>
+
+        <article class="product-card" data-id="2" data-name="Camarão Crocante" data-price="44.90">
+          <div class="product-photo">
+            <img src="src/prato-mar.webp" alt="Camarão crocante">
+            <button class="favorite-button" type="button" aria-label="Adicionar Camarão Crocante ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Camarão Crocante do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Camarão Crocante</h3>
+          <p>Camarões empanados, molho especial e chips crocantes.</p>
+          <strong>R$ 44,90</strong>
+        </article>
+
+        <article class="product-card" data-id="3" data-name="Dadinho de Tapioca" data-price="29.90">
+          <div class="product-photo">
+            <img src="src/entrada.webp" alt="Dadinho de tapioca">
+            <button class="favorite-button" type="button" aria-label="Adicionar Dadinho de Tapioca ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Dadinho de Tapioca do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Dadinho de Tapioca</h3>
+          <p>Fritos na hora e acompanhados por geleia especial.</p>
+          <strong>R$ 29,90</strong>
+        </article>
+
+        <article class="product-card" data-id="4" data-name="Bolinho da Casa" data-price="32.90">
+          <div class="product-photo">
+            <img src="src/entrada.webp" alt="Bolinho da casa">
+            <button class="favorite-button" type="button" aria-label="Adicionar Bolinho da Casa ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Bolinho da Casa do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Bolinho da Casa</h3>
+          <p>Crocante por fora, macio por dentro e cheio de sabor.</p>
+          <strong>R$ 32,90</strong>
+        </article>
+
+        <article class="product-card" data-id="5" data-name="Batata Mezha" data-price="26.90">
+          <div class="product-photo">
+            <img src="src/prato-carne.webp" alt="Batata Mezha">
+            <button class="favorite-button" type="button" aria-label="Adicionar Batata Mezha ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Batata Mezha</h3>
+          <p>Batatas crocantes, ervas frescas e molho cremoso.</p>
+          <strong>R$ 26,90</strong>
+        </article>
+
+        <article class="product-card" data-id="6" data-name="Bruschetta da Casa" data-price="34.90">
+          <div class="product-photo">
+            <img src="src/entrada.webp" alt="Bruschetta da casa">
+            <button class="favorite-button" type="button" aria-label="Adicionar Bruschetta da Casa ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Bruschetta da Casa</h3>
+          <p>Pão artesanal tostado, tomate, ervas e queijo.</p>
+          <strong>R$ 34,90</strong>
+        </article>
+
+        <article class="product-card" data-id="7" data-name="Mini Pastéis" data-price="31.90">
+          <div class="product-photo">
+            <img src="src/entrada.webp" alt="Mini pastéis">
+            <button class="favorite-button" type="button" aria-label="Adicionar Mini Pastéis ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Mini Pastéis</h3>
+          <p>Massa leve e crocante, recheios escolhidos pela cozinha.</p>
+          <strong>R$ 31,90</strong>
+        </article>
+
+        <article class="product-card" data-id="8" data-name="Linguiça na Chapa" data-price="38.90">
+          <div class="product-photo">
+            <img src="src/prato-carne.webp" alt="Linguiça na chapa">
+            <button class="favorite-button" type="button" aria-label="Adicionar Linguiça na Chapa ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Linguiça na Chapa</h3>
+          <p>Linguiça artesanal, cebola tostada e molho da casa.</p>
+          <strong>R$ 38,90</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-highlight">
+      <img src="src/parmegiana.webp" alt="Parmegiana Mezha">
+
+      <div class="highlight-copy">
+        <p class="catalog-kicker">Destaque da casa</p>
+
+        <h2>Parmegiana<br><i>Mezha</i></h2>
+
+        <p>
+          Carne macia, molho artesanal, queijo gratinado e acompanhamentos
+          preparados para uma refeição inesquecível.
+        </p>
+
+        <strong>R$ 48,90</strong>
+
+        <button
+          class="highlight-order gold"
+          type="button"
+          data-id="9"
+          data-name="Parmegiana Mezha"
+          data-price="48.90"
+        >
+          Adicionar ao pedido
+        </button>
+      </div>
+    </section>
+
+    <section class="menu-catalog menu-catalog-secondary">
+      <div class="catalog-title">
+        <p class="catalog-kicker">Para continuar</p>
+        <h2>Pratos principais</h2>
+        <p>
+          Receitas generosas, ingredientes marcantes e sabores que fazem
+          você voltar.
+        </p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-id="10" data-name="Filé Mezha" data-price="69.90">
+          <div class="product-photo">
+            <img src="src/prato-carne.webp" alt="Filé Mezha">
+            <button class="favorite-button" type="button" aria-label="Adicionar Filé Mezha ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Filé Mezha</h3>
+          <p>Corte alto, molho especial, arroz e fritas crocantes.</p>
+          <strong>R$ 69,90</strong>
+        </article>
+
+        <article class="product-card" data-id="11" data-name="Parmegiana de Frango" data-price="47.90">
+          <div class="product-photo">
+            <img src="src/parmegiana.webp" alt="Parmegiana de frango">
+            <button class="favorite-button" type="button" aria-label="Adicionar Parmegiana de Frango ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Parmegiana de Frango</h3>
+          <p>Frango empanado, queijo gratinado e molho artesanal.</p>
+          <strong>R$ 47,90</strong>
+        </article>
+
+        <article class="product-card" data-id="12" data-name="Camarão do Mezha" data-price="64.90">
+          <div class="product-photo">
+            <img src="src/prato-mar.webp" alt="Camarão do Mezha">
+            <button class="favorite-button" type="button" aria-label="Adicionar Camarão do Mezha ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Camarão do Mezha</h3>
+          <p>Camarões salteados, arroz cremoso e ervas frescas.</p>
+          <strong>R$ 64,90</strong>
+        </article>
+
+        <article class="product-card" data-id="13" data-name="Bife com Fritas" data-price="54.90">
+          <div class="product-photo">
+            <img src="src/prato-carne.webp" alt="Bife com fritas">
+            <button class="favorite-button" type="button" aria-label="Adicionar Bife com Fritas ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Bife com Fritas</h3>
+          <p>Carne grelhada, batatas rústicas e molho de ervas.</p>
+          <strong>R$ 54,90</strong>
+        </article>
+
+        <article class="product-card" data-id="14" data-name="Peixe Grelhado" data-price="58.90">
+          <div class="product-photo">
+            <img src="src/prato-mar.webp" alt="Peixe grelhado">
+            <button class="favorite-button" type="button" aria-label="Adicionar Peixe Grelhado ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Peixe Grelhado</h3>
+          <p>Peixe fresco, legumes e molho cítrico da casa.</p>
+          <strong>R$ 58,90</strong>
+        </article>
+
+        <article class="product-card" data-id="15" data-name="Arroz Cremoso" data-price="43.90">
+          <div class="product-photo">
+            <img src="src/parmegiana.webp" alt="Arroz cremoso">
+            <button class="favorite-button" type="button" aria-label="Adicionar Arroz Cremoso ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Arroz Cremoso</h3>
+          <p>Arroz cremoso, queijo, ervas e finalização dourada.</p>
+          <strong>R$ 43,90</strong>
+        </article>
+
+        <article class="product-card" data-id="16" data-name="Prato do Dia" data-price="39.90">
+          <div class="product-photo">
+            <img src="src/prato-carne.webp" alt="Prato do dia">
+            <button class="favorite-button" type="button" aria-label="Adicionar Prato do Dia ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Prato do Dia</h3>
+          <p>Uma criação especial da cozinha para cada novo encontro.</p>
+          <strong>R$ 39,90</strong>
+        </article>
+
+        <article class="product-card" data-id="17" data-name="Sobremesa da Casa" data-price="24.90">
+          <div class="product-photo">
+            <img src="src/sobremesa.webp" alt="Sobremesa da casa">
+            <button class="favorite-button" type="button" aria-label="Adicionar Sobremesa da Casa ao pedido">♡</button>
+            <button
+  class="remove-button"
+  type="button"
+  aria-label="Remover Tábua Mezha do pedido"
+>
+ −
+</button>
+          </div>
+
+          <h3>Sobremesa da Casa</h3>
+          <p>Doce especial para encerrar a experiência com sabor.</p>
+          <strong>R$ 24,90</strong>
+        </article>
+      </div>
+    </section>
+  </main>
+
+
+
+ <a
+  class="floating-button floating-whatsapp"
+  href="https://wa.me/5561999999999"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Conversar pelo WhatsApp"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L0 24l6.6-1.7a11.8 11.8 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.4Zm-8.4 18.2h-.1c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.7 9.7 0 0 1-1.5-5.1C1.9 6.2 6.5 1.7 12.1 1.7c2.7 0 5.2 1 7.1 2.9a10 10 0 0 1 2.9 7.1c0 5.6-4.5 10-10 10Zm5.5-7.5c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.7-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.1-.7-1.6-1-2.2-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 3s1.3 3.5 1.5 3.8c.2.2 2.5 3.9 6.1 5.4.9.4 1.6.6 2.1.8.9.3 1.7.2 2.3.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.2-.2-.5-.3Z" />
+  </svg>
+</a>
+<button
+  class="floating-button floating-top"
+  type="button"
+  aria-label="Voltar ao início"
+>
+
+  ↑
+</button>
+
+  <!-- Cole aqui o mesmo footer da landing -->
+
+  <script src="script.js"></script>
+  <script src="cardapio.js"></script>
+</body>
+</html>

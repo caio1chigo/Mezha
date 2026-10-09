@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121E3A">
+
+  <title>Reservas | Mezha Cozinha e Bar</title>
+   <link rel="shortcut icon" href="src/favicon.ico" type="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reservas.css">
+</head>
+
+<body class="reservation-page">
+     <div class="loader" id="loader">
+    <img src="src/mezha-logo.png" alt="Mezha Cozinha e Bar">
+    <span>MEZHA · COZINHA E BAR</span>
+  </div>
+  <header class="header-premium">
+    <div class="header-details">
+      <span>Samambaia Sul · Brasília</span>
+      <span>Ter — Dom · 11h às 23h</span>
+      <a href="tel:+5561992590904">(61) 99259-0904</a>
+    </div>
+
+    <a class="logo-premium" href="index.html" aria-label="Mezha Cozinha e Bar">
+      <img src="src/mezha-logo.png" alt="Mezha Cozinha e Bar">
+    </a>
+
+    <span class="mobile-hours">
+      Ter — Dom<br>
+      11h às 23h
+    </span>
+
+    <nav class="header-nav" id="nav">
+      <a href="index.html#casa">A casa</a>
+      <a href="index.html#galeria">Galeria</a>
+      <a href="reservas.html">Reservas</a>
+      <a class="gold header-cardapio" href="cardapio.html">
+        Ver cardápio
+      </a>
+    </nav>
+
+    <button
+      id="menu-btn"
+      type="button"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="reservation-intro">
+      <p class="reservation-kicker">Uma mesa espera por você</p>
+
+      <h1>Reserve sua mesa</h1>
+
+      <p>
+        Escolha o melhor momento para viver uma experiência Mezha.
+      </p>
+    </section>
+
+    <section class="reservation-layout">
+      <div class="reservation-form-panel">
+        <p class="form-kicker">Faça sua reserva</p>
+
+        <h2>Vamos preparar<br><i>sua mesa.</i></h2>
+
+        <form id="reservation-form">
+          <div class="form-row">
+            <label>
+              Data
+              <input type="date" name="data" required>
+            </label>
+
+            <label>
+              Horário
+              <select name="horario" required>
+                <option value="">Selecione</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+                <option>21:00</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Número de pessoas
+            <select name="pessoas" required>
+              <option value="">Selecione</option>
+              <option>1 pessoa</option>
+              <option>2 pessoas</option>
+              <option>3 pessoas</option>
+              <option>4 pessoas</option>
+              <option>5 pessoas</option>
+              <option>6 ou mais pessoas</option>
+            </select>
+          </label>
+
+          <div class="form-row">
+            <label>
+              Nome completo
+              <input type="text" name="nome" placeholder="Seu nome" required>
+            </label>
+
+            <label>
+              WhatsApp
+              <input type="tel" name="whatsapp" placeholder="(61) 99999-9999" required>
+            </label>
+          </div>
+
+          <label>
+            Observações especiais
+            <textarea
+              name="observacoes"
+              rows="4"
+              placeholder="Alguma preferência ou necessidade especial?"
+            ></textarea>
+          </label>
+
+          <button class="gold reservation-submit" type="submit">
+            Solicitar reserva
+          </button>
+
+          <small class="form-note">
+            Sua solicitação será confirmada pelo WhatsApp.
+          </small>
+        </form>
+      </div>
+
+      <div class="reservation-side">
+        <img
+          class="reservation-image"
+          src="src/ambiente.webp"
+          alt="Ambiente do Mezha"
+        >
+
+        <div class="reservation-details">
+          <div>
+            <p class="details-kicker">Horário de funcionamento</p>
+            <p>Terça a domingo</p>
+            <p>11h às 23h</p>
+          </div>
+
+          <div>
+            <p class="details-kicker">Localização</p>
+            <p>Samambaia Sul</p>
+            <p>Brasília — DF</p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Samambaia+Sul+Brasilia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Como chegar →
+            </a>
+          </div>
+        </div>
+
+        <div class="reservation-map">
+          <iframe
+            title="Localização do Mezha no Google Maps"
+            src="https://www.google.com/maps?q=Samambaia+Sul,+Bras%C3%ADlia&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <a
+  class="floating-button floating-whatsapp"
+  href="https://wa.me/5561999999999"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Conversar pelo WhatsApp"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L0 24l6.6-1.7a11.8 11.8 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.4Zm-8.4 18.2h-.1c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.7 9.7 0 0 1-1.5-5.1C1.9 6.2 6.5 1.7 12.1 1.7c2.7 0 5.2 1 7.1 2.9a10 10 0 0 1 2.9 7.1c0 5.6-4.5 10-10 10Zm5.5-7.5c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.7-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.1-.7-1.6-1-2.2-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 3s1.3 3.5 1.5 3.8c.2.2 2.5 3.9 6.1 5.4.9.4 1.6.6 2.1.8.9.3 1.7.2 2.3.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.2-.2-.5-.3Z" />
+  </svg>
+</a>
+<button
+  class="floating-button floating-top"
+  type="button"
+  aria-label="Voltar ao início"
+>
+
+  ↑
+</button>
+
+  <footer class="site-footer fade-in">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a class="footer-logo" href="#inicio">
+        <img src="src/mezha-logo.png" alt="Mezha Cozinha e Bar">
+      </a>
+
+      <p>
+        Cozinha, encontros e sabores feitos para ficar na memória.
+      </p>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram do Mezha">Instagram</a>
+        <a href="#" aria-label="WhatsApp do Mezha">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <span>Menu</span>
+      <a href="#casa">A casa</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#reserva">Reservas</a>
+    </div>
+
+    <div class="footer-column">
+      <span>Contato</span>
+      <a href="tel:+5561992590904">(61) 99259-0904</a>
+      <a href="mailto:contato@mezha.com.br">contato@mezha.com.br</a>
+      <p>Samambaia Sul<br>Brasília — DF</p>
+    </div>
+
+    <div class="footer-form">
+      <span>Fale com o Mezha</span>
+      <p>Deixe seus dados e nossa equipe entra em contato.</p>
+
+      <form id="contact-form">
+        <input
+          type="text"
+          name="nome"
+          placeholder="Seu nome"
+          required
+        >
+
+        <input
+          type="tel"
+          name="whatsapp"
+          placeholder="Seu WhatsApp"
+          required
+        >
+
+        <button class="gold" type="submit">
+          Enviar mensagem
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Mezha Cozinha & Bar. Todos os direitos reservados.</span>
+
+    <div>
+      <a href="cardapio.html">Ver cardápio</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="reservas.js"></script>
+</body>
+</html>
